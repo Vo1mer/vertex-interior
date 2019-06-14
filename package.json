@@ -1,0 +1,19 @@
+{
+  "name": "fdn",
+  "version": "1.0.0",
+  "description": "preproc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch --recursive --output css --source-map true --source-map-contents scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vo1mer/FDN/issues"
+  },
+  "homepage": "https://github.com/Vo1mer/FDN#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
