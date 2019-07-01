@@ -28,7 +28,7 @@ div {
     width: 100%;
 
     .header_menu-item {
-      padding: 5px 0 5px 0;
+      padding: 3px 0 3px 0;
       list-style: none;
       opacity: 0.7;
       border: 2px solid transparent;
@@ -36,8 +36,10 @@ div {
 
       &:hover {
         opacity: 1;
-        border-top: 2px solid #ffff00;
-        border-bottom: 2px solid #ffff00;
+        //border-top: 2px solid #ffff00;
+        //border-bottom: 2px solid #ffff00;
+        border-top: 2px solid #C8B48E;
+        border-bottom: 2px solid #C8B48E;
       }
 
       a {
@@ -53,7 +55,7 @@ div {
 }
 
 main {
-
+//--------------------------     SECTION HERO     ----------------
   .section_hero {
     height: calc(100vh - 86px);
     background: url("../img/bg_hero.jpg");
@@ -87,12 +89,16 @@ main {
           color: aliceblue;
           font-weight: 600;
           margin-top: 50px;
+          font-family: 'Open Sans', sans-serif;
+          letter-spacing: 0.05em;
         }
 
         .hero_subtitle {
           font-size: 1.5rem;
           color: #ffffff;
           font-weight: 400;
+          font-family: 'Open Sans', sans-serif;
+          letter-spacing: 0.02em;
         }
 
         .btn_order {
@@ -113,6 +119,8 @@ main {
     }
   }
 
+
+//--------------------------     SECTION SERVICES     ----------------
   .section_services {
     padding: 100px 0;
 
@@ -156,11 +164,12 @@ main {
     }
   }
 
+
+//--------------------------     SECTION PORTFOLIO     ----------------
   .section_portfolio {
     padding: 100px 0;
     background-color: #F0F0F0;
     .fragments{
-      font-style: italic;
       margin-bottom: 40px;
     }
 
@@ -398,6 +407,64 @@ main {
     }
   }
 
+
+//--------------------------     SECTION ABOUT US     ----------------
+  .section_aboutUs{
+    padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+
+  .aboutUs_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .aboutUs-photo{
+    background: url("../img/sec_about_us_bg.jpg")center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    order: 2;
+  }
+
+ .aboutUs-info{
+   //background-color: #C5A900;
+   background-color: #C8B48E;
+   width: 100%;
+   height: 700px;
+   padding: 0 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   order: 3;
+ }
+
+  .aboutUs_info-title{
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::before{
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+
+  .aboutUs_info-description{
+    font-weight: 400;
+    font-size: 18px;
+
+  }
+
+//--------------------------     SECTION WORK     ----------------
   .section_work {
     padding: 100px 0;
 
@@ -497,6 +564,7 @@ main {
     }
   }
 
+//--------------------------     SECTION TARIFF     ----------------
   .section_tariff {
     padding: 100px 0;
     background-color: #F0F0F0;
@@ -511,6 +579,7 @@ main {
       position: relative;
       margin: 10px;
 
+
       &:hover {
         -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
         -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
@@ -521,6 +590,8 @@ main {
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 1.5em;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.03em;
       }
 
       span {
@@ -562,6 +633,8 @@ main {
     }
   }
 
+
+//--------------------------     SECTION CONTACT     ----------------
   .section_contact {
     padding: 100px 0;
     background-color: #ffffff;
@@ -576,12 +649,14 @@ main {
       grid-template-columns: repeat(3, 1fr);
       margin-bottom: 30px;
 
-      .cont {
+      .contact_office {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #F0F0F0;
+        grid-row-start: 1;
+        grid-row-end: 2;
 
         h3 {
           letter-spacing: .1em;
@@ -593,13 +668,37 @@ main {
         }
       }
 
+      .contact_order{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #F0F0F0;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        div {
+          text-align: center;
+          h3 {
+            letter-spacing: .1em;
+          }
+
+          a {
+            text-decoration: none;
+            color: #2C4058;
+          }
+        }
+      }
+
       .contact_about-social {
+        display: flex;
+        align-items: center;
+        background-color: #F0F0F0;
         flex-direction: row;
         justify-content: space-around;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 3;
-        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
 
         div {
           width: 43px;
@@ -618,18 +717,6 @@ main {
       }
 
     }
-
-    section {
-
-
-      .maps_container {
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
-        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
-        margin: 0 auto 50px auto;
-      }
-
-    }
   }
 
 }
@@ -645,6 +732,7 @@ main {
   position: relative;
   width: auto;
   letter-spacing: .05em;
+  font-family: 'Open Sans', sans-serif;
 
   &:before {
     content: '';
@@ -658,8 +746,7 @@ main {
   }
 }
 
-// Экстрамалые девайсы («телефоны», < 576px)
-// Нет @media, т.к. это по умолчанию в Bootstrap
+
 
 // Малые девайсы («ландшафтные телефоны», >= 576px)
 @media screen and (min-width: 576px) {
@@ -675,6 +762,7 @@ main {
           .hero_title {
             font-size: 2.5em;
             color: aliceblue;
+
           }
 
           .hero_subtitle {
@@ -689,8 +777,25 @@ main {
 }
 
 // Большие девайсы (десктопы, >= 992px)
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
+  .services_grid--container{
+    display: none;
+  }
 
+  #aboutUs{
+    flex-direction: column-reverse;
+
+
+    .aboutUs-photo{
+      margin: 0 auto 20px auto;
+
+    }
+    .aboutUs-info{
+      order: 1;
+      margin: 0 auto 20px auto;
+      height: 500px;
+    }
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)

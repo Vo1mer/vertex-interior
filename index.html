@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat:300,400,600,700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -50,10 +53,11 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse col-lg-7 col-md-12 col-sm-12" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse col-lg-8 col-md-12 col-sm-12" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto header_menu justify-content-around" id="top-menu">
                 <li class="header_menu-item nav-item active"><a class="nav-link" href="#services">Наші послуги</a></li>
-                <li class="header_menu-item nav-item"><a class="nav-link" href="#portfolio"> Портфоліо</a></li>
+                <li class="header_menu-item nav-item"><a class="nav-link" href="#portfolio">Портфоліо</a></li>
+                <li class="header_menu-item nav-item"><a class="nav-link" href="#aboutUs">Про нас</a></li>
                 <li class="header_menu-item nav-item"><a class="nav-link" href="#work">Як ми працюємо</a></li>
                 <li class="header_menu-item nav-item"><a class="nav-link" href="#tariff">Тарифи</a></li>
                 <li class="header_menu-item nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
@@ -100,8 +104,8 @@
         <section class="section_portfolio container-fluid" id="portfolio">
             <h2 class="title">Портфоліо</h2>
 
-            <div class="container"><h4 class="fragments">Фрагменти наших обраних проектів</h4></div>
-            <div class="row justify-content-center">
+            <div class="container"><h4 class="fragments text-center">Наша ціль - зручність, естетика і спокій.</h4></div>
+            <div class="row justify-content-center services_grid--container">
                 <div class="services_grid-container">
                     <div class="grid-item1"></div>
                     <div class="grid-item2"></div>
@@ -132,6 +136,21 @@
                 </section>
             </div>
         </section>
+
+        <section id="aboutUs" class="section_aboutUs container">
+            <div class="row aboutUs_container">
+                <div class="aboutUs-photo col-sm-10 col-md-10 col-lg-5"></div>
+                <div class="aboutUs-info col-sm-10 col-md-10 col-lg-5">
+                    <div class="aboutUs_info-title">Про нас</div>
+                    <div class="aboutUs_info-description">Наша дизайн студія займається створенням дизайну інтер'єрів в
+                        сучасному стилі з екологічно чистих матеріалів. Ми спеціалізуємося на квартирах та приватних
+                        будинках для клієнтів бізнес і преміум класу. Ми зібрали команду фахівців, де кожен з нас горить
+                        ідеєю кращого сервісу, кращої якості в дизайні інтер'єру.
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section_work container" id="work">
             <h2 class="title">Як ми працюємо</h2>
             <div class="work_elements">
@@ -214,24 +233,21 @@
                 <h2 class="title">Контакти</h2>
             <div class="container">
                 <div class="grid_contact_about">
-                    <div class="contact_office cont col-sm-12">
+                    <div class="contact_office col-sm-12">
                         <h3>ОФІС</h3>
                         <span>Івано-Франківськ, Україна</span>
                     </div>
-                    <div class="contact_work_time cont col-sm-12">
-                        <h3>ЧАС РОБОТИ</h3>
-                        <span>Пн–Пт: з 9 до 19</span>
-                    </div>
-                    <div class="contact_email cont col-sm-12">
-                        <h3>EMAIL</h3>
-                        <a href="mailto:hello@sphere.com cont">hello@sphere.com</a>
-                    </div>
-                    <div class="contact_order cont col-sm-12">
-                        <h3>ДЛЯ ЗАМОВЛЕНЬ</h3>
-                        <a href="tel:+380633617961">+38 (063) 361 79 61</a>
+
+                    <div class="contact_order col-sm-12">
+                        <div><h3>ДЛЯ ЗАМОВЛЕНЬ</h3>
+                            <a href="tel:+380633617961">+38 (063) 361 79 61</a>
+                        </div>
+                        <div><h3>EMAIL</h3>
+                            <a href="mailto:hello@sphere.com cont">hello@sphere.com</a>
+                        </div>
                     </div>
 
-                    <div class="contact_about-social cont col-sm-12">
+                    <div class="contact_about-social col-sm-12">
                         <div><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
                         <div><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></div>
                         <div><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></div>
@@ -240,38 +256,7 @@
             </div>
 
         </section>
-        <section class="container-fluid">
-            <!-- MAPS -->
 
-            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="maps_container container-fluid">
-                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-                <script>(function () {
-                    var setting = {
-                        "height": 700,
-                        "width": 1920,
-                        "zoom": 18,
-                        "queryString": "площа Ринок, 4, Івано-Франківськ, Ивано-Франковская область, Украина",
-                        "place_id": "EnvQv9C70L7RidCwINCg0LjQvdC-0LosIDQsINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LosINCY0LLQsNC90L4t0KTRgNCw0L3QutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAiMBIuChQKEglJBMRJE8EwRxF69xZtihV3WBAEKhQKEglFLfpNE8EwRxFFisP_ziszjA",
-                        "satellite": false,
-                        "centerCoord": [48.9202685, 24.7080913],
-                        "cid": "0xb4c2ae0e7ec00a62",
-                        "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-                        "embed_id": "39998"
-                    };
-                    var d = document;
-                    var s = d.createElement('script');
-                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=39998';
-                    s.async = true;
-                    s.onload = function (e) {
-                        window.OneMap.initMap(setting)
-                    };
-                    var to = d.getElementsByTagName('script')[0];
-                    to.parentNode.insertBefore(s, to);
-                })();</script>
-                <a href="https://1map.com/map-embed?embed_id=39998">1map.com</a>
-            </div>
-                <!-- end MAPS -->
-        </section>
 
     </main>
 
