@@ -209,8 +209,6 @@
   padding: 0; }
 
 body {
-  width: 100%;
-  height: 100%;
   font-family: 'El Messiri', sans-serif;
   transition: color .5s ease-in;
   font-size: 18px; }
@@ -242,465 +240,563 @@ div .header_menu {
       text-wrap: normal;
       white-space: nowrap; }
 
-main .section_hero {
-  height: calc(100vh - 86px);
-  background: url("../img/bg_hero.jpg");
-  background-size: cover;
-  position: relative; }
-  main .section_hero .hero_container {
+#main {
+  padding: 0; }
+
+main {
+  overflow: hidden; }
+  main .section_hero {
     height: calc(100vh - 86px);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    max-height: 820px; }
-    main .section_hero .hero_container .background {
-      position: absolute;
+    background: url("../img/bg_hero.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative; }
+    main .section_hero .hero_container {
+      height: calc(100vh - 86px);
       top: 0;
+      right: 0;
+      bottom: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
+      margin: auto;
+      max-height: 820px; }
+      main .section_hero .hero_container .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center; }
+        main .section_hero .hero_container .background .hero_title {
+          font-size: 4em;
+          color: aliceblue;
+          font-weight: 600;
+          margin-top: 50px;
+          font-family: 'Open Sans', sans-serif;
+          letter-spacing: 0.05em; }
+        main .section_hero .hero_container .background .hero_subtitle {
+          font-size: 1.5rem;
+          color: #ffffff;
+          font-weight: 400;
+          font-family: 'Open Sans', sans-serif;
+          letter-spacing: 0.02em; }
+        main .section_hero .hero_container .background .btn_order {
+          background-color: #FFBE49;
+          width: auto;
+          padding: 0 15px;
+          height: 60px;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 60px;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 1em;
+          font-weight: 400;
+          white-space: nowrap; }
+  main .section_services {
+    padding: 100px 0; }
+    main .section_services .services-item {
       display: flex;
-      align-items: center;
-      justify-content: space-around;
       flex-direction: column;
+      align-items: center;
+      color: #2c4058;
+      width: 27%;
+      height: 350px;
       text-align: center; }
-      main .section_hero .hero_container .background .hero_title {
-        font-size: 4em;
-        color: aliceblue;
-        font-weight: 600;
-        margin-top: 50px;
+      main .section_services .services-item div {
+        background-size: cover;
+        width: 134px;
+        height: 134px; }
+      main .section_services .services-item .flat {
+        background: url("../img/slice1.png") center center no-repeat; }
+      main .section_services .services-item .private-flat {
+        background: url("../img/slice2.png") center center no-repeat; }
+      main .section_services .services-item .author-flat {
+        background: url("../img/slice3.png") center center no-repeat; }
+      main .section_services .services-item h3 {
+        font-size: 1.278em;
+        margin-bottom: 25px; }
+      main .section_services .services-item p {
+        font-size: 1em;
+        font-weight: 300; }
+  main .section_portfolio {
+    padding: 100px 0;
+    background-color: #F0F0F0; }
+    main .section_portfolio .fragments {
+      margin-bottom: 40px; }
+    main .section_portfolio .services_grid-container {
+      width: 80%;
+      height: 1000px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px; }
+      main .section_portfolio .services_grid-container .grid-item1 {
+        background: url("../img/grid1.jpg") center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2; }
+      main .section_portfolio .services_grid-container .grid-item2 {
+        background: url("../img/grid2.jpg") center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2; }
+      main .section_portfolio .services_grid-container .grid-item3 {
+        background: url("../img/grid3.jpg") center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3; }
+      main .section_portfolio .services_grid-container .grid-item4 {
+        background: url("../img/grid4.jpg") center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3; }
+    main .section_portfolio .services_slider1 {
+      height: 600px;
+      width: 100%;
+      margin-top: 200px;
+      position: relative; }
+      main .section_portfolio .services_slider1:before {
+        content: 'Готельно-відпочинковий комплекс';
+        color: #F0F0F0;
+        font-size: 18px;
+        padding: 8px;
+        width: calc(100% - 40px);
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        background-color: rgba(109, 109, 109, 0.5);
+        z-index: 3; }
+      main .section_portfolio .services_slider1 .slider1_item {
+        outline: none; }
+      main .section_portfolio .services_slider1 .slider1_item1 {
+        background: url("../img/proj1_hotel/hotel_1.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item2 {
+        background: url("../img/proj1_hotel/hotel_2.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item3 {
+        background: url("../img/proj1_hotel/hotel_3.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item4 {
+        background: url("../img/proj1_hotel/hotel_4.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item5 {
+        background: url("../img/proj1_hotel/hotel_5.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item6 {
+        background: url("../img/proj1_hotel/hotel_6.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item7 {
+        background: url("../img/proj1_hotel/hotel_7.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item8 {
+        background: url("../img/proj1_hotel/hotel_8.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item9 {
+        background: url("../img/proj1_hotel/hotel_9.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item10 {
+        background: url("../img/proj1_hotel/hotel_10.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item11 {
+        background: url("../img/proj1_hotel/hotel_11.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item12 {
+        background: url("../img/proj1_hotel/hotel_12.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item13 {
+        background: url("../img/proj1_hotel/hotel_13.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item14 {
+        background: url("../img/proj1_hotel/hotel_14.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider1 .slider1_item15 {
+        background: url("../img/proj1_hotel/hotel_15.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+    main .section_portfolio .services_slider2 {
+      height: 600px;
+      width: 100%;
+      margin-top: 200px;
+      position: relative; }
+      main .section_portfolio .services_slider2:before {
+        content: 'Приватний будинок м. Івано-Франківськ';
+        color: #F0F0F0;
+        font-size: 18px;
+        padding: 8px;
+        width: calc(100% - 40px);
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        background-color: rgba(109, 109, 109, 0.5);
+        z-index: 3; }
+      main .section_portfolio .services_slider2 .prevButton {
+        background: url("../img/icons8-chevron-left-80.png") center center no-repeat;
+        background-size: cover;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        left: -50px;
+        top: calc(50% - 20px);
+        cursor: pointer; }
+      main .section_portfolio .services_slider2 .nextButton {
+        background: url("../img/icons8-chevron-right-80 (1).png") center center no-repeat;
+        background-size: cover;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: -50px;
+        top: calc(50% - 15px);
+        cursor: pointer; }
+      main .section_portfolio .services_slider2 .slider2_item {
+        outline: none; }
+      main .section_portfolio .services_slider2 .slider2_item1 {
+        background: url("../img/proj2_private/private_1.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        min-height: 200px;
+        height: 600px; }
+      main .section_portfolio .services_slider2 .slider2_item2 {
+        background: url("../img/proj2_private/private_2.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider2 .slider2_item3 {
+        background: url("../img/proj2_private/private_3.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider2 .slider2_item4 {
+        background: url("../img/proj2_private/private_4.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider2 .slider2_item5 {
+        background: url("../img/proj2_private/private_5.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+    main .section_portfolio .services_slider3 {
+      height: 600px;
+      width: 100%;
+      margin-top: 200px;
+      position: relative; }
+      main .section_portfolio .services_slider3:before {
+        content: 'Конференц-зала м. Київ';
+        color: #F0F0F0;
+        font-size: 18px;
+        padding: 8px;
+        width: calc(100% - 40px);
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        background-color: rgba(109, 109, 109, 0.5);
+        z-index: 3; }
+      main .section_portfolio .services_slider3 .prevButton {
+        background: url("../img/icons8-chevron-left-80.png") center center no-repeat;
+        background-size: cover;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        left: -50px;
+        top: calc(50% - 20px);
+        cursor: pointer; }
+      main .section_portfolio .services_slider3 .nextButton {
+        background: url("../img/icons8-chevron-right-80 (1).png") center center no-repeat;
+        background-size: cover;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: -50px;
+        top: calc(50% - 15px);
+        cursor: pointer; }
+      main .section_portfolio .services_slider3 .slider3_item {
+        outline: none; }
+      main .section_portfolio .services_slider3 .slider3_item1 {
+        background: url("../img/proj3_conference/conference_1.jpg") center no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider3 .slider3_item2 {
+        background: url("../img/proj3_conference/conference_2.jpg") center no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+      main .section_portfolio .services_slider3 .slider3_item3 {
+        background: url("../img/proj3_conference/conference_3.jpg") center no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px; }
+  main .section_aboutUs {
+    padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff; }
+  main .aboutUs_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  main .aboutUs-photo {
+    background: url("../img/sec_about_us_bg.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    order: 2; }
+  main .aboutUs-info {
+    background-color: #C8B48E;
+    width: 100%;
+    height: 700px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 3; }
+  main .aboutUs_info-title {
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 40px; }
+    main .aboutUs_info-title::before {
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      bottom: -10px;
+      left: 0; }
+  main .aboutUs_info-description {
+    font-weight: 400;
+    font-size: 18px; }
+  main .section_work {
+    padding: 100px 0; }
+    main .section_work .work_elements {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      main .section_work .work_elements .work_icon {
+        height: 570px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 30px; }
+        main .section_work .work_elements .work_icon .work_item {
+          width: 90px;
+          height: 90px;
+          background-size: cover; }
+        main .section_work .work_elements .work_icon .work_item1 {
+          background: url("../img/work-icon1.png") center no-repeat;
+          position: relative; }
+          main .section_work .work_elements .work_icon .work_item1:before {
+            content: '';
+            position: absolute;
+            left: 44px;
+            bottom: -70px;
+            width: 2px;
+            height: 70px;
+            background-color: #D1D1D1; }
+        main .section_work .work_elements .work_icon .work_item2 {
+          background: url("../img/work-icon2.png") center no-repeat;
+          position: relative; }
+          main .section_work .work_elements .work_icon .work_item2:before {
+            content: '';
+            position: absolute;
+            left: 44px;
+            bottom: -70px;
+            width: 2px;
+            height: 70px;
+            background-color: #D1D1D1; }
+        main .section_work .work_elements .work_icon .work_item3 {
+          background: url("../img/work-icon3.png") center no-repeat;
+          position: relative; }
+          main .section_work .work_elements .work_icon .work_item3:before {
+            content: '';
+            position: absolute;
+            left: 44px;
+            bottom: -70px;
+            width: 2px;
+            height: 70px;
+            background-color: #D1D1D1; }
+        main .section_work .work_elements .work_icon .work_item4 {
+          background: url("../img/work-icon1.png") center no-repeat;
+          position: relative; }
+      main .section_work .work_elements .work_about {
+        height: 570px;
+        max-width: 655px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5px;
+        color: #2c4058; }
+        main .section_work .work_elements .work_about div {
+          height: 90px; }
+          main .section_work .work_elements .work_about div h3 {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px; }
+          main .section_work .work_elements .work_about div p {
+            font-size: 0.778em;
+            font-weight: 300; }
+  main .section_tariff {
+    padding: 100px 0;
+    background-color: #F0F0F0; }
+    main .section_tariff .tariff_card {
+      background-color: #fff;
+      height: 560px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 40px 10px;
+      position: relative;
+      margin: 10px; }
+      main .section_tariff .tariff_card:hover {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45); }
+      main .section_tariff .tariff_card h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 1.5em;
         font-family: 'Open Sans', sans-serif;
-        letter-spacing: 0.05em; }
-      main .section_hero .hero_container .background .hero_subtitle {
-        font-size: 1.5rem;
-        color: #ffffff;
-        font-weight: 400;
-        font-family: 'Open Sans', sans-serif;
-        letter-spacing: 0.02em; }
-      main .section_hero .hero_container .background .btn_order {
+        letter-spacing: 0.03em; }
+      main .section_tariff .tariff_card span {
+        font-size: 35px;
+        font-weight: 700; }
+      main .section_tariff .tariff_card ul {
+        margin-top: 1.5em;
+        height: 250px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        main .section_tariff .tariff_card ul li {
+          font-size: 13px;
+          font-weight: 300; }
+      main .section_tariff .tariff_card .card_btn_order {
         background-color: #FFBE49;
-        width: auto;
-        padding: 0 15px;
-        height: 60px;
+        display: block;
+        width: 120px;
+        height: 45px;
         text-align: center;
-        line-height: 60px;
+        line-height: 45px;
         border-radius: 60px;
         color: #ffffff;
         text-decoration: none;
-        font-size: 1em;
+        font-size: 18px;
         font-weight: 400;
-        white-space: nowrap; }
-
-main .section_services {
-  padding: 100px 0; }
-  main .section_services .services-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #2c4058;
-    width: 27%;
-    height: 350px;
-    text-align: center; }
-    main .section_services .services-item div {
-      background-size: cover;
-      width: 134px;
-      height: 134px; }
-    main .section_services .services-item .flat {
-      background: url("../img/slice1.png") center center no-repeat; }
-    main .section_services .services-item .private-flat {
-      background: url("../img/slice2.png") center center no-repeat; }
-    main .section_services .services-item .author-flat {
-      background: url("../img/slice3.png") center center no-repeat; }
-    main .section_services .services-item h3 {
-      font-size: 1.278em;
-      margin-bottom: 25px; }
-    main .section_services .services-item p {
-      font-size: 1em;
-      font-weight: 300; }
-
-main .section_portfolio {
-  padding: 100px 0;
-  background-color: #F0F0F0; }
-  main .section_portfolio .fragments {
-    margin-bottom: 40px; }
-  main .section_portfolio .services_grid-container {
-    width: 80%;
-    height: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px; }
-    main .section_portfolio .services_grid-container .grid-item1 {
-      background: url("../img/grid1.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2; }
-    main .section_portfolio .services_grid-container .grid-item2 {
-      background: url("../img/grid2.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2; }
-    main .section_portfolio .services_grid-container .grid-item3 {
-      background: url("../img/grid3.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3; }
-    main .section_portfolio .services_grid-container .grid-item4 {
-      background: url("../img/grid4.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      grid-column-start: 2;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 3; }
-  main .section_portfolio .services_slider1 {
-    height: 500px;
-    width: 80%;
-    margin-top: 200px;
-    position: relative; }
-    main .section_portfolio .services_slider1 .slider1_item {
-      margin: 0 10px;
-      outline: none; }
-    main .section_portfolio .services_slider1 .slider1_item1 {
-      background: url("../img/proj1/proj1_1.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 500px; }
-    main .section_portfolio .services_slider1 .slider1_item2 {
-      background: url("../img/proj1/proj1_2.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 500px; }
-    main .section_portfolio .services_slider1 .slider1_item3 {
-      background: url("../img/proj1/proj1_3.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 500px; }
-    main .section_portfolio .services_slider1 .slider1_item4 {
-      background: url("../img/proj1/proj1_4.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 500px; }
-    main .section_portfolio .services_slider1 .slider1_item5 {
-      background: url("../img/proj1/proj1_5.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 500px; }
-    main .section_portfolio .services_slider1 .slider1_item6 {
-      background: url("../img/proj1/proj1_6.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 500px; }
-    main .section_portfolio .services_slider1 .slider1_item7 {
-      background: url("../img/proj1/proj1_7.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 500px; }
-  main .section_portfolio .services_slider2 {
-    height: 600px;
-    width: 80%;
-    margin-top: 200px;
-    position: relative; }
-    main .section_portfolio .services_slider2 .prevButton {
-      background: url("../img/icons8-chevron-left-80.png") center center no-repeat;
-      background-size: cover;
-      content: "";
-      width: 40px;
-      height: 40px;
-      display: block;
-      position: absolute;
-      left: -50px;
-      top: calc(50% - 20px);
-      cursor: pointer; }
-    main .section_portfolio .services_slider2 .nextButton {
-      background: url("../img/icons8-chevron-right-80 (1).png") center center no-repeat;
-      background-size: cover;
-      content: "";
-      width: 40px;
-      height: 40px;
-      display: block;
-      position: absolute;
-      right: -50px;
-      top: calc(50% - 15px);
-      cursor: pointer; }
-    main .section_portfolio .services_slider2 .slider2_item {
-      margin: 0 10px;
-      outline: none; }
-    main .section_portfolio .services_slider2 .slider2_item1 {
-      background: url("../img/proj2/proj2_1.jpg") center no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 600px; }
-    main .section_portfolio .services_slider2 .slider2_item2 {
-      background: url("../img/proj2/proj2_2.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 600px; }
-    main .section_portfolio .services_slider2 .slider2_item3 {
-      background: url("../img/proj2/proj2_3.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 600px; }
-    main .section_portfolio .services_slider2 .slider2_item4 {
-      background: url("../img/proj2/proj2_4.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 600px; }
-    main .section_portfolio .services_slider2 .slider2_item5 {
-      background: url("../img/proj2/proj2_5.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 600px; }
-    main .section_portfolio .services_slider2 .slider2_item6 {
-      background: url("../img/proj2/proj2_6.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 600px; }
-    main .section_portfolio .services_slider2 .slider2_item7 {
-      background: url("../img/proj2/proj2_7.jpg") center;
-      background-size: cover;
-      width: 100%;
-      height: 600px; }
-
-main .section_aboutUs {
-  padding-top: 100px;
-  font-family: 'Open Sans', sans-serif;
-  color: #ffffff; }
-
-main .aboutUs_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-main .aboutUs-photo {
-  background: url("../img/sec_about_us_bg.jpg") center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 700px;
-  order: 2; }
-
-main .aboutUs-info {
-  background-color: #C8B48E;
-  width: 100%;
-  height: 700px;
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  order: 3; }
-
-main .aboutUs_info-title {
-  font-size: 40px;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 40px; }
-  main .aboutUs_info-title::before {
-    content: '';
-    width: 60px;
-    height: 2px;
-    background-color: #ffffff;
-    position: absolute;
-    bottom: -10px;
-    left: 0; }
-
-main .aboutUs_info-description {
-  font-weight: 400;
-  font-size: 18px; }
-
-main .section_work {
-  padding: 100px 0; }
-  main .section_work .work_elements {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    main .section_work .work_elements .work_icon {
-      height: 570px;
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: 40px; }
+  main .section_contact {
+    padding-top: 100px;
+    background-color: #ffffff; }
+    main .section_contact .grid_contact_about {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-right: 30px; }
-      main .section_work .work_elements .work_icon .work_item {
-        width: 90px;
-        height: 90px;
-        background-size: cover; }
-      main .section_work .work_elements .work_icon .work_item1 {
-        background: url("../img/work-icon1.png") center no-repeat;
-        position: relative; }
-        main .section_work .work_elements .work_icon .work_item1:before {
-          content: '';
-          position: absolute;
-          left: 44px;
-          bottom: -70px;
-          width: 2px;
-          height: 70px;
-          background-color: #D1D1D1; }
-      main .section_work .work_elements .work_icon .work_item2 {
-        background: url("../img/work-icon2.png") center no-repeat;
-        position: relative; }
-        main .section_work .work_elements .work_icon .work_item2:before {
-          content: '';
-          position: absolute;
-          left: 44px;
-          bottom: -70px;
-          width: 2px;
-          height: 70px;
-          background-color: #D1D1D1; }
-      main .section_work .work_elements .work_icon .work_item3 {
-        background: url("../img/work-icon3.png") center no-repeat;
-        position: relative; }
-        main .section_work .work_elements .work_icon .work_item3:before {
-          content: '';
-          position: absolute;
-          left: 44px;
-          bottom: -70px;
-          width: 2px;
-          height: 70px;
-          background-color: #D1D1D1; }
-      main .section_work .work_elements .work_icon .work_item4 {
-        background: url("../img/work-icon1.png") center no-repeat;
-        position: relative; }
-    main .section_work .work_elements .work_about {
-      height: 570px;
-      max-width: 655px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-top: 5px;
-      color: #2c4058; }
-      main .section_work .work_elements .work_about div {
-        height: 90px; }
-        main .section_work .work_elements .work_about div h3 {
-          font-weight: bold;
-          font-size: 1.389em;
-          margin-bottom: 5px; }
-        main .section_work .work_elements .work_about div p {
-          font-size: 0.778em;
-          font-weight: 300; }
-
-main .section_tariff {
-  padding: 100px 0;
-  background-color: #F0F0F0; }
-  main .section_tariff .tariff_card {
-    background-color: #fff;
-    height: 560px;
-    border-radius: 10px;
-    text-align: center;
-    padding: 40px 10px;
-    position: relative;
-    margin: 10px; }
-    main .section_tariff .tariff_card:hover {
-      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
-      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45); }
-    main .section_tariff .tariff_card h3 {
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 1.5em;
-      font-family: 'Open Sans', sans-serif;
-      letter-spacing: 0.03em; }
-    main .section_tariff .tariff_card span {
-      font-size: 35px;
-      font-weight: 700; }
-    main .section_tariff .tariff_card ul {
-      margin-top: 1.5em;
-      height: 250px;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around; }
-      main .section_tariff .tariff_card ul li {
-        font-size: 13px;
-        font-weight: 300; }
-    main .section_tariff .tariff_card .card_btn_order {
-      background-color: #FFBE49;
-      display: block;
-      width: 120px;
-      height: 45px;
-      text-align: center;
-      line-height: 45px;
-      border-radius: 60px;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 400;
-      position: absolute;
-      left: calc(50% - 60px);
-      bottom: 40px; }
-
-main .section_contact {
-  padding: 100px 0;
-  background-color: #ffffff; }
-  main .section_contact .grid_contact_about {
-    display: grid;
-    width: 100%;
-    height: 250px;
-    gap: 15px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 30px; }
-    main .section_contact .grid_contact_about .contact_office {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #F0F0F0;
-      grid-row-start: 1;
-      grid-row-end: 2; }
-      main .section_contact .grid_contact_about .contact_office h3 {
-        letter-spacing: .1em; }
-      main .section_contact .grid_contact_about .contact_office a {
-        text-decoration: none;
-        color: #2C4058; }
-    main .section_contact .grid_contact_about .contact_order {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #F0F0F0;
-      grid-row-start: 1;
-      grid-row-end: 3; }
-      main .section_contact .grid_contact_about .contact_order div {
-        text-align: center; }
-        main .section_contact .grid_contact_about .contact_order div h3 {
+      flex-direction: row;
+      margin-bottom: 30px; }
+      main .section_contact .grid_contact_about .contact_office {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F0F0F0;
+        height: 120px;
+        margin-right: 15px; }
+        main .section_contact .grid_contact_about .contact_office h3 {
           letter-spacing: .1em; }
-        main .section_contact .grid_contact_about .contact_order div a {
+        main .section_contact .grid_contact_about .contact_office a {
           text-decoration: none;
           color: #2C4058; }
-    main .section_contact .grid_contact_about .contact_about-social {
-      display: flex;
-      align-items: center;
-      background-color: #F0F0F0;
-      flex-direction: row;
-      justify-content: space-around;
-      grid-row-start: 1;
-      grid-row-end: 2; }
-      main .section_contact .grid_contact_about .contact_about-social div {
-        width: 43px;
-        height: 43px;
-        border: 1px solid #000;
-        border-radius: 100%;
-        text-align: center;
-        line-height: 47px; }
-        main .section_contact .grid_contact_about .contact_about-social div a {
-          text-decoration: none;
-          color: #000;
-          font-size: 25px; }
+      main .section_contact .grid_contact_about .contact_order {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #F0F0F0;
+        height: 240px;
+        margin-right: 15px; }
+        main .section_contact .grid_contact_about .contact_order div {
+          text-align: center; }
+          main .section_contact .grid_contact_about .contact_order div h3 {
+            letter-spacing: .1em; }
+          main .section_contact .grid_contact_about .contact_order div a {
+            text-decoration: none;
+            color: #2C4058; }
+      main .section_contact .grid_contact_about .contact_about-social {
+        display: flex;
+        align-items: center;
+        background-color: #F0F0F0;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 120px; }
+        main .section_contact .grid_contact_about .contact_about-social div {
+          width: 43px;
+          height: 43px;
+          border: 1px solid #000;
+          border-radius: 100%;
+          text-align: center;
+          line-height: 47px; }
+          main .section_contact .grid_contact_about .contact_about-social div a {
+            text-decoration: none;
+            color: #000;
+            font-size: 25px; }
 
 .title {
   text-align: center;
@@ -742,6 +838,46 @@ main .section_contact {
     #aboutUs .aboutUs-info {
       order: 1;
       margin: 0 auto 20px auto;
-      height: 500px; } }
+      height: 500px; }
+  #contact .grid_contact_about {
+    flex-direction: column; }
+    #contact .grid_contact_about .contact_office {
+      margin: 0 auto 20px auto;
+      padding: 30px 0; }
+    #contact .grid_contact_about .contact_order {
+      margin: 0 auto 20px auto;
+      padding: 30px 0; }
+    #contact .grid_contact_about .contact_about-social {
+      margin: 0 auto;
+      padding: 30px 0; }
+  #slider1 {
+    height: 300px; }
+    #slider1 .slider1_item {
+      height: 300px;
+      background-size: cover; }
+  #slider2 {
+    height: 300px; }
+    #slider2 .slider2_item {
+      height: 300px;
+      background-size: cover; }
+  #slider3 {
+    height: 300px; }
+    #slider3 .slider3_item {
+      height: 300px;
+      background-size: cover; } }
+
+@media screen and (max-width: 1650px) {
+  #slider1:before {
+    font-size: 18px;
+    width: 100%;
+    left: 0; }
+  #slider2:before {
+    font-size: 18px;
+    width: 100%;
+    left: 0; }
+  #slider3:before {
+    font-size: 18px;
+    width: 100%;
+    left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

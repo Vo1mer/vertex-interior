@@ -7,8 +7,8 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
+  //width: 100%;
+  //height: 100%;
   font-family: 'El Messiri', sans-serif;
   transition: color .5s ease-in;
   font-size: 18px;
@@ -54,13 +54,22 @@ div {
   }
 }
 
+#main{
+  padding: 0;
+}
+
 main {
+  overflow: hidden;
+
 //--------------------------     SECTION HERO     ----------------
   .section_hero {
     height: calc(100vh - 86px);
-    background: url("../img/bg_hero.jpg");
+    background: url("../img/bg_hero.jpg") center center no-repeat;
+    //width: calc(100vw - 40px);
+    //width: 100%;
     background-size: cover;
     position: relative;
+
 
     .hero_container {
       height: calc(100vh - 86px);
@@ -70,6 +79,7 @@ main {
       left: 0;
       margin: auto;
       max-height: 820px;
+
 
       .background {
         position: absolute;
@@ -83,6 +93,8 @@ main {
         justify-content: space-around;
         flex-direction: column;
         text-align: center;
+
+
 
         .hero_title {
           font-size: 4em;
@@ -231,10 +243,25 @@ main {
 
 
     .services_slider1 {
-      height: 500px;
-      width: 80%;
+      height: 600px;
+      width: 100%;
       margin-top: 200px;
       position: relative;
+
+      &:before{
+        content: 'Готельно-відпочинковий комплекс';
+        color: #F0F0F0;
+        font-size: 18px;
+        padding: 8px;
+
+        width: calc(100% - 40px);
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        background-color: rgba(109, 109, 109, .5);
+        z-index: 3;
+      }
 
       //.prevButton {
       //  background: url("../img/icons8-chevron-left-80.png") center center no-repeat;
@@ -263,66 +290,134 @@ main {
       //}
 
       .slider1_item {
-        margin: 0 10px;
+        //margin: 0 10px;
         outline: none;
       }
 
       .slider1_item1 {
-        background: url("../img/proj1/proj1_1.jpg") center;
-        background-size: cover;
+        background: url("../img/proj1_hotel/hotel_1.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
-        height: 500px;
+        height: 600px;
       }
 
       .slider1_item2 {
-        background: url("../img/proj1/proj1_2.jpg") center;
-        background-size: cover;
+        background: url("../img/proj1_hotel/hotel_2.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
-        height: 500px;
+        height: 600px;
       }
 
       .slider1_item3 {
-        background: url("../img/proj1/proj1_3.jpg") center;
-        background-size: cover;
+        background: url("../img/proj1_hotel/hotel_3.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
-        height: 500px;
+        height: 600px;
       }
 
       .slider1_item4 {
-        background: url("../img/proj1/proj1_4.jpg") center;
-        background-size: cover;
+        background: url("../img/proj1_hotel/hotel_4.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
-        height: 500px;
+        height: 600px;
       }
 
       .slider1_item5 {
-        background: url("../img/proj1/proj1_5.jpg") center;
-        background-size: cover;
+        background: url("../img/proj1_hotel/hotel_5.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
-        height: 500px;
+        height: 600px;
       }
 
       .slider1_item6 {
-        background: url("../img/proj1/proj1_6.jpg") center;
-        background-size: cover;
+        background: url("../img/proj1_hotel/hotel_6.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
-        height: 500px;
+        height: 600px;
       }
 
       .slider1_item7 {
-        background: url("../img/proj1/proj1_7.jpg") center;
-        background-size: cover;
+        background: url("../img/proj1_hotel/hotel_7.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
-        height: 500px;
+        height: 600px;
+      }
+      .slider1_item8 {
+        background: url("../img/proj1_hotel/hotel_8.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+
+      .slider1_item9 {
+        background: url("../img/proj1_hotel/hotel_9.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+
+      .slider1_item10 {
+        background: url("../img/proj1_hotel/hotel_10.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+
+      .slider1_item11 {
+        background: url("../img/proj1_hotel/hotel_11.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+
+      .slider1_item12 {
+        background: url("../img/proj1_hotel/hotel_12.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+
+      .slider1_item13 {
+        background: url("../img/proj1_hotel/hotel_13.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+
+      .slider1_item14 {
+        background: url("../img/proj1_hotel/hotel_14.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+      .slider1_item15 {
+        background: url("../img/proj1_hotel/hotel_15.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
       }
     }
 
-
     .services_slider2 {
       height: 600px;
-      width: 80%;
+      width: 100%;
       margin-top: 200px;
       position: relative;
+
+      &:before{
+        content: 'Приватний будинок м. Івано-Франківськ';
+        color: #F0F0F0;
+        font-size: 18px;
+        padding: 8px;
+
+        width: calc(100% - 40px);
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        background-color: rgba(109, 109, 109, .5);
+        z-index: 3;
+      }
 
       .prevButton {
         background: url("../img/icons8-chevron-left-80.png") center center no-repeat;
@@ -351,56 +446,117 @@ main {
       }
 
       .slider2_item {
-        margin: 0 10px;
+        //margin: 0 10px;
         outline: none;
 
       }
 
       .slider2_item1 {
-        background: url("../img/proj2/proj2_1.jpg") center no-repeat;
-        background-size: cover;
+        background: url("../img/proj2_private/private_1.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
+        min-height: 200px;
         height: 600px;
       }
 
       .slider2_item2 {
-        background: url("../img/proj2/proj2_2.jpg") center;
-        background-size: cover;
+        background: url("../img/proj2_private/private_2.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
         height: 600px;
       }
 
       .slider2_item3 {
-        background: url("../img/proj2/proj2_3.jpg") center;
-        background-size: cover;
+        background: url("../img/proj2_private/private_3.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
         height: 600px;
       }
 
       .slider2_item4 {
-        background: url("../img/proj2/proj2_4.jpg") center;
-        background-size: cover;
+        background: url("../img/proj2_private/private_4.jpg") center bottom no-repeat;
+        background-size: 75rem;
         width: 100%;
         height: 600px;
       }
 
       .slider2_item5 {
-        background: url("../img/proj2/proj2_5.jpg") center;
+        background: url("../img/proj2_private/private_5.jpg") center bottom no-repeat;
+        background-size: 75rem;
+        width: 100%;
+        height: 600px;
+      }
+    }
+
+    .services_slider3 {
+      height: 600px;
+      width: 100%;
+      margin-top: 200px;
+      position: relative;
+
+      &:before{
+        content: 'Конференц-зала м. Київ';
+        color: #F0F0F0;
+        font-size: 18px;
+        padding: 8px;
+
+        width: calc(100% - 40px);
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        background-color: rgba(109, 109, 109, .5);
+        z-index: 3;
+      }
+
+      .prevButton {
+        background: url("../img/icons8-chevron-left-80.png") center center no-repeat;
         background-size: cover;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        left: -50px;
+        top: calc(50% - 20px);
+        cursor: pointer;
+      }
+
+      .nextButton {
+        background: url("../img/icons8-chevron-right-80 (1).png") center center no-repeat;
+        background-size: cover;
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: -50px;
+        top: calc(50% - 15px);
+        cursor: pointer;
+      }
+
+      .slider3_item {
+        outline: none;
+
+      }
+
+      .slider3_item1 {
+        background: url("../img/proj3_conference/conference_1.jpg") center no-repeat;
+        background-size: 75rem;
         width: 100%;
         height: 600px;
       }
 
-      .slider2_item6 {
-        background: url("../img/proj2/proj2_6.jpg") center;
-        background-size: cover;
+      .slider3_item2 {
+        background: url("../img/proj3_conference/conference_2.jpg") center no-repeat;
+        background-size: 75rem;
         width: 100%;
         height: 600px;
       }
 
-      .slider2_item7 {
-        background: url("../img/proj2/proj2_7.jpg") center;
-        background-size: cover;
+      .slider3_item3 {
+        background: url("../img/proj3_conference/conference_3.jpg") center no-repeat;
+        background-size: 75rem;
         width: 100%;
         height: 600px;
       }
@@ -551,7 +707,7 @@ main {
 
           h3 {
             font-weight: bold;
-            font-size: 1.389em;
+            font-size: 20px;
             margin-bottom: 5px;
           }
 
@@ -636,17 +792,13 @@ main {
 
 //--------------------------     SECTION CONTACT     ----------------
   .section_contact {
-    padding: 100px 0;
+    padding-top: 100px;
     background-color: #ffffff;
 
 
     .grid_contact_about {
-      display: grid;
-      width: 100%;
-      height: 250px;
-      gap: 15px;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-direction: row;
       margin-bottom: 30px;
 
       .contact_office {
@@ -655,8 +807,8 @@ main {
         justify-content: center;
         align-items: center;
         background-color: #F0F0F0;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        height: 120px;
+        margin-right: 15px;
 
         h3 {
           letter-spacing: .1em;
@@ -674,8 +826,8 @@ main {
         justify-content: space-around;
         align-items: center;
         background-color: #F0F0F0;
-        grid-row-start: 1;
-        grid-row-end: 3;
+        height: 240px;
+        margin-right: 15px;
 
         div {
           text-align: center;
@@ -696,8 +848,7 @@ main {
         background-color: #F0F0F0;
         flex-direction: row;
         justify-content: space-around;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        height: 120px;
 
 
         div {
@@ -796,9 +947,77 @@ main {
       height: 500px;
     }
   }
+
+  #contact {
+    .grid_contact_about {
+      flex-direction: column;
+      //height: 525px;
+
+      .contact_office{
+        margin: 0 auto 20px auto;
+        padding: 30px 0;
+      }
+      .contact_order{
+        margin: 0 auto 20px auto;
+        padding: 30px 0;
+      }
+      .contact_about-social{
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+    }
+  }
+
+  #slider1 {
+    height: 300px;
+    .slider1_item{
+      height: 300px;
+      background-size: cover;
+    }
+  }
+
+  #slider2 {
+    height: 300px;
+    .slider2_item{
+      height: 300px;
+      background-size: cover;
+    }
+  }
+
+  #slider3 {
+    height: 300px;
+    .slider3_item{
+      height: 300px;
+      background-size: cover;
+    }
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1650px) {
 
+    #slider1 {
+      &:before {
+        font-size: 18px;
+        width: 100%;
+        left: 0;
+      }
+    }
+
+
+  #slider2 {
+    &:before {
+      font-size: 18px;
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  #slider3 {
+    &:before {
+      font-size: 18px;
+      width: 100%;
+      left: 0;
+    }
+  }
 }
